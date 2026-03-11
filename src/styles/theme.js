@@ -1,0 +1,103 @@
+// Light Theme
+export const lightTheme = {
+  colors: {
+    primary: '#000000',
+    secondary: '#ffffff',
+    accent: '#0066FF',
+    accentGradient: 'linear-gradient(135deg, #0066FF 0%, #00A8FF 100%)',
+    text: '#000000',
+    textLight: '#666666',
+    textLighter: '#999999',
+    white: '#ffffff',
+    background: '#ffffff',
+    backgroundAlt: '#f5f5f5',
+    backgroundGlass: 'rgba(255, 255, 255, 0.7)',
+    border: '#e0e0e0',
+    overlay: 'rgba(0, 0, 0, 0.05)',
+    gradient1: 'linear-gradient(135deg, #667eea 0%, #764ba2 100%)',
+    gradient2: 'linear-gradient(135deg, #f093fb 0%, #f5576c 100%)',
+    gradient3: 'linear-gradient(135deg, #4facfe 0%, #00f2fe 100%)',
+    gradient4: 'linear-gradient(135deg, #43e97b 0%, #38f9d7 100%)',
+    gradient5: 'linear-gradient(135deg, #fa709a 0%, #fee140 100%)',
+    particleColor: '#0066FF',
+  },
+  fonts: {
+    main: '-apple-system, BlinkMacSystemFont, "Segoe UI", "Inter", "Helvetica Neue", Arial, sans-serif',
+    heading: '"Space Grotesk", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif',
+    mono: '"Fira Code", "Courier New", monospace',
+  },
+  breakpoints: {
+    mobile: '768px',
+    tablet: '1024px',
+    desktop: '1280px',
+    wide: '1920px',
+  },
+  spacing: {
+    xs: '0.4rem',
+    sm: '0.75rem',
+    md: '1.25rem',
+    lg: '1.5rem',
+    xl: '2.25rem',
+    xxl: '3rem',
+    xxxl: '4.5rem',
+  },
+  shadows: {
+    sm: '0 1px 3px rgba(0, 0, 0, 0.05)',
+    md: '0 4px 12px rgba(0, 0, 0, 0.08)',
+    lg: '0 10px 30px rgba(0, 0, 0, 0.1)',
+    xl: '0 20px 60px rgba(0, 0, 0, 0.15)',
+    glass: '0 8px 32px 0 rgba(31, 38, 135, 0.1)',
+    neumorphic: '8px 8px 16px #d1d1d1, -8px -8px 16px #ffffff',
+    neumorphicInset: 'inset 8px 8px 16px #d1d1d1, inset -8px -8px 16px #ffffff',
+  },
+  transitions: {
+    fast: '0.15s cubic-bezier(0.4, 0, 0.2, 1)',
+    normal: '0.3s cubic-bezier(0.4, 0, 0.2, 1)',
+    slow: '0.6s cubic-bezier(0.4, 0, 0.2, 1)',
+    smooth: '0.8s cubic-bezier(0.4, 0, 0.2, 1)',
+    bounce: '0.5s cubic-bezier(0.68, -0.55, 0.265, 1.55)',
+    elastic: '0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275)',
+  },
+  zIndex: {
+    base: 1,
+    dropdown: 1000,
+    sticky: 1100,
+    fixed: 1200,
+    modal: 1300,
+    popover: 1400,
+    tooltip: 1500,
+    cursor: 9999,
+  },
+};
+
+// Dark Theme
+export const darkTheme = {
+  ...lightTheme,
+  colors: {
+    ...lightTheme.colors,
+    primary: '#ffffff',
+    secondary: '#000000',
+    text: '#ffffff',
+    textLight: '#b0b0b0',
+    textLighter: '#808080',
+    background: '#0a0a0a',
+    backgroundAlt: '#1a1a1a',
+    backgroundGlass: 'rgba(10, 10, 10, 0.7)',
+    border: '#2a2a2a',
+    overlay: 'rgba(255, 255, 255, 0.05)',
+    particleColor: '#00A8FF',
+  },
+  shadows: {
+    ...lightTheme.shadows,
+    sm: '0 1px 3px rgba(0, 0, 0, 0.3)',
+    md: '0 4px 12px rgba(0, 0, 0, 0.4)',
+    lg: '0 10px 30px rgba(0, 0, 0, 0.5)',
+    xl: '0 20px 60px rgba(0, 0, 0, 0.6)',
+    glass: '0 8px 32px 0 rgba(0, 0, 0, 0.4)',
+    neumorphic: '8px 8px 16px #050505, -8px -8px 16px #0f0f0f',
+    neumorphicInset: 'inset 8px 8px 16px #050505, inset -8px -8px 16px #0f0f0f',
+  },
+};
+
+// Default export (light theme)
+export const theme = lightTheme;
